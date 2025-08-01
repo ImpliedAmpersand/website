@@ -1,16 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-    <link href="src/css/output.css" rel="stylesheet">
-</head>
-<body>
-    <h1 class="bg-slate-500">
-        Hello world!
-    </h1>
-    <p>This is a paragraph styled with custom colors and the Didact Gothic font.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tim Daso</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white font-sans">
+    <!-- Navbar -->
+    <nav
+      class="bg-black border-b border-gray-800 px-6 py-4 flex justify-center space-x-8 text-lg font-medium"
+    >
+      <a href="/" class="text-white hover:text-gray-300">Home</a>
+      <a href="coding/" class="text-white hover:text-gray-300">Coding</a>
+      <a href="compositions/" class="text-white hover:text-gray-300"
+        >Compositions</a
+      >
+      <a href="crosswords/" class="text-white hover:text-gray-300"
+        >Crosswords</a
+      >
+      <a href="codex/" class="text-white hover:text-gray-300">Codex</a>
+      <a href="contact/" class="text-white hover:text-gray-300">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-20">
+      <h1 class="text-4xl md:text-6xl font-bold">Tim Daso</h1>
+      <p class="text-lg text-gray-400 mt-4 max-w-xl mx-auto">
+        Game developer, puzzlemaker, and composer.
+      </p>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 md:px-20 pb-20">
+      <!-- Coding -->
+      <a
+        href="coding/"
+        class="bg-gray-800 hover:bg-gray-700 transition p-6 rounded-2xl shadow-xl flex flex-col items-center text-center"
+      >
+        <img
+          src="assets/images/game-screenshot.jpg"
+          alt="Game Screenshot"
+          class="rounded mb-4 max-h-48 object-cover w-full"
+        />
+        <h2 class="text-xl font-semibold">Games & Coding</h2>
+        <p class="text-gray-400 text-sm mt-2">
+          Original games, interactive tools, and experimental code projects.
+        </p>
+      </a>
+
+      <!-- Crosswords -->
+      <a
+        href="crosswords/"
+        class="bg-gray-800 hover:bg-gray-700 transition p-6 rounded-2xl shadow-xl flex flex-col items-center text-center"
+      >
+        <img
+          src="assets/images/crossword-thumbnail.png"
+          alt="Crossword Preview"
+          class="rounded mb-4 max-h-48 object-cover w-full"
+        />
+        <h2 class="text-xl font-semibold">Crosswords</h2>
+        <p class="text-gray-400 text-sm mt-2">
+          Play puzzles I've made or download .puz files and solve offline.
+        </p>
+      </a>
+
+      <!-- Compositions -->
+      <a
+        href="compositions/"
+        class="bg-gray-800 hover:bg-gray-700 transition p-6 rounded-2xl shadow-xl flex flex-col items-center text-center"
+      >
+        <img
+          src="assets/images/music-sheet.jpg"
+          alt="Music Preview"
+          class="rounded mb-4 max-h-48 object-cover w-full"
+        />
+        <h2 class="text-xl font-semibold">Compositions</h2>
+        <p class="text-gray-400 text-sm mt-2">
+          Listen to my music or explore scores and sheet music.
+        </p>
+      </a>
+
+      <!-- Codex -->
+      <a
+        href="codex/"
+        class="bg-gray-800 hover:bg-gray-700 transition p-6 rounded-2xl shadow-xl flex flex-col items-center text-center"
+      >
+        <img
+          src="assets/images/codex-preview.jpg"
+          alt="Codex"
+          class="rounded mb-4 max-h-48 object-cover w-full"
+        />
+        <h2 class="text-xl font-semibold">Codex</h2>
+        <p class="text-gray-400 text-sm mt-2">
+          Game design lore, dev notes, and behind-the-scenes documents.
+        </p>
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 py-8">
+      © 2025 Tim Daso ·
+      <a href="mailto:dasotimothy@gmail.com" class="underline"
+        >dasotimothy@gmail.com</a
+      >
+    </footer>
+  </body>
 </html>
+
 <!-- npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch; -->
