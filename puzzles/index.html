@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tim Daso | Puzzles</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              outfit: ["Outfit", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-black text-slate-100 flex flex-col font-outfit min-h-screen">
+    <header>
+      <nav class="flex items-center justify-between">
+        <a href="/" class="flex flex-1 items-center group">
+          <svg
+            class="w-12 h-12 m-4 transition-all duration-300 ease-in-out group-hover:text-indigo-400 group-hover:scale-110"
+            width="1080"
+            height="1080"
+            viewBox="0 0 1080 1080"
+            version="1.1"
+            id="svg1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg"
+          >
+            <defs id="defs1" />
+            <g id="layer2">
+              <path
+                id="path35"
+                style="
+                  display: inline;
+                  fill: currentColor;
+                  fill-opacity: 1;
+                  stroke: none;
+                  stroke-width: 20;
+                  stroke-dasharray: none;
+                "
+                d="M 270,0 486,360 118.80078,972 h 54 L 513,405 648,630 378,1080 h 54 l 243,-405 243,405 h 54 L 702,630 1015.2,108 h -54 L 675,585 540,360 756,0 Z m 76.63086,37.716797 H 679.36914 L 513,315 Z"
+              />
+            </g>
+          </svg>
+
+          <h3
+            class="text-3xl text-black font-extralight group-hover:text-indigo-400 transition-all duration-300 ease-in-out"
+          >
+            Home
+          </h3>
+        </a>
+        <section class="flex flex-[10] flex-row items-center justify-center">
+          <a
+            href="/me/"
+            class="text-4xl text-slate-100 font-extralight hover:text-indigo-400 transition-all duration-100 ease-in-out"
+          >
+            <!-- hover:underline decoration-1 underline-offset-4 hover:scale-105"
+          >-->
+            Tim Daso
+          </a>
+          <img
+            src="../src/assets/ampersand_logo_white.svg"
+            alt="Tim Daso Logo"
+            class="w-6 h-6 m-4 pt-1"
+          />
+          <a
+            href="/games/"
+            class="text-4xl text-slate-100 font-extralight hover:text-indigo-400 transition-all duration-100 ease-in-out"
+          >
+            Games
+          </a>
+          <img
+            src="../src/assets/ampersand_logo_white.svg"
+            alt="Tim Daso Logo"
+            class="w-6 h-6 m-4 pt-1"
+          />
+          <a
+            href="/puzzles/"
+            class="text-4xl text-indigo-400 font-extralight hover:text-indigo-400 transition-all duration-100 ease-in-out"
+          >
+            Puzzles
+          </a>
+          <img
+            src="../src/assets/ampersand_logo_white.svg"
+            alt="Tim Daso Logo"
+            class="w-6 h-6 m-4 pt-1"
+          />
+          <a
+            href="/artwork/"
+            class="text-4xl text-slate-100 font-extralight hover:text-indigo-400 transition-all duration-100 ease-in-out"
+          >
+            Artwork
+          </a>
+        </section>
+        <section class="flex flex-1"></section>
+      </nav>
+    </header>
+    <main class="flex flex-1 flex-col">
+      <section class="flex items-center justify-center mb-10">
+        <h1 class="flex text-7xl font-light">Explore my world of</h1>
+      </section>
+      <section class="flex flex-row flex-1 justify-center">
+        <div class="flex w-16"></div>
+        <div class="flex flex-col flex-1 items-center justify-start">
+          <a
+            href="https://crosshare.org/tim"
+            class="flex text-6xl font-extralight hover:text-indigo-400 transition-all duration-100 ease-in-out"
+          >
+            <h2>Crosswords</h2>
+          </a>
+          <a
+            href="https://crosshare.org/crosswords/9AItzixE0cPA2aSNomI4/the-great-cryptid-debate-finally-solved"
+            class="m-16 flex flex-col items-center group"
+          >
+            <img
+              src="../src/assets/featured_crossword.png"
+              class="max-w-72 border-solid border-white border-8 group-hover:scale-[1.03] transition-all duration-100 ease-in-out"
+            />
+            <h3
+              class="text-2xl mt-2 font-light group-hover:text-indigo-400 transition-all duration-100 ease-in-out"
+            >
+              Featured Puzzle: "The Great Cryptid Debate: Finally Solved"
+            </h3>
+          </a>
+          <a
+            href="https://crosshare.org/tim"
+            class="flex text-3xl font-extralight underline underline-offset-2 hover:text-indigo-400 transition-all duration-100 ease-in-out"
+          >
+            <h2>All Puzzles</h2>
+          </a>
+        </div>
+        <div class="flex w-0.5 bg-white"></div>
+        <div class="flex flex-col flex-1 items-center justify-start">
+          <a
+            href="https://logic-masters.de/Raetselportal/Benutzer/eingestellt.php?name=Timpanist&chlang=en"
+            class="flex group"
+          >
+            <h2
+              class="text-6xl font-extralight group-hover:text-indigo-400 transition-all duration-100 ease-in-out"
+            >
+              Sudoku
+            </h2>
+            <svg
+              class="w-10 h-10 mt-3 ml-4 mr-6 transition-all duration-100 ease-in-out group-hover:text-indigo-400"
+              width="1080"
+              height="1080"
+              viewBox="0 0 1080 1080"
+              version="1.1"
+              id="svg1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:svg="http://www.w3.org/2000/svg"
+            >
+              <defs id="defs1" />
+              <g id="layer2">
+                <path
+                  id="path35"
+                  style="
+                    display: inline;
+                    fill: currentColor;
+                    fill-opacity: 1;
+                    stroke: none;
+                    stroke-width: 20;
+                    stroke-dasharray: none;
+                  "
+                  d="M 270,0 486,360 118.80078,972 h 54 L 513,405 648,630 378,1080 h 54 l 243,-405 243,405 h 54 L 702,630 1015.2,108 h -54 L 675,585 540,360 756,0 Z m 76.63086,37.716797 H 679.36914 L 513,315 Z"
+                />
+              </g>
+            </svg>
+            <h2
+              class="text-6xl font-extralight group-hover:text-indigo-400 transition-all duration-100 ease-in-out"
+            >
+              Logic
+            </h2>
+          </a>
+          <a
+            href="https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?id=000RCL&chlang=en"
+            class="mt-16 mb-2 flex flex-col items-center group"
+          >
+            <img
+              src="../src/assets/featured_sudoku.png"
+              class="max-w-72 border-solid border-white border-8 group-hover:scale-[1.03] transition-all duration-100 ease-in-out"
+            />
+            <h3
+              class="text-2xl mt-4 font-light group-hover:text-indigo-400 transition-all duration-100 ease-in-out"
+            >
+              Featured Puzzle: "The No-9 Line"
+            </h3>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=nUQ9oqabqkg"
+            class="flex items-center group"
+            ><h3
+              class="text-2xl mt-2 mb-4 font-light underline underline-offset-2 group-hover:text-indigo-400 transition-all duration-100 ease-in-out"
+            >
+              Watch Cracking the Cryptic solve it!
+            </h3></a
+          >
+          <a
+            href="https://logic-masters.de/Raetselportal/Benutzer/eingestellt.php?name=Timpanist&chlang=en"
+            class="flex text-3xl font-extralight underline underline-offset-2 hover:text-indigo-400 transition-all duration-100 ease-in-out"
+          >
+            <h2>All Puzzles</h2>
+          </a>
+        </div>
+        <div class="flex w-16"></div>
+      </section>
+    </main>
+    <footer class="">
+      <section class="flex flex-1 flex-row items-center justify-center">
+        <a
+          href="mailto:hello@timdaso.com"
+          class="flex flex-1 font-extralight justify-end hover:underline underline-offset-2"
+          >hello@timdaso.com</a
+        >
+        <img
+          src="../src/assets/ampersand_logo_white.svg"
+          alt="Tim Daso Logo"
+          class="w-3 h-3 m-6 flex"
+        />
+        <p class="flex flex-1 font-extralight">© 2026 Tim Daso</p>
+      </section>
+    </footer>
+  </body>
+</html>

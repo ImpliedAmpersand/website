@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tim Daso</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white font-sans">
+    <!-- Navbar -->
+    <nav
+      class="bg-black border-b border-gray-800 px-6 py-4 flex justify-center space-x-8 text-lg font-medium"
+    >
+      <a href="/" class="text-white hover:text-indigo-500">Home</a>
+      <a href="coding/" class="text-white hover:text-indigo-500">Coding</a>
+      <a href="compositions/" class="text-white hover:text-indigo-500"
+        >Compositions</a
+      >
+      <a href="crosswords/" class="text-white hover:text-indigo-500"
+        >Crosswords</a
+      >
+      <a href="codex/" class="text-white hover:text-indigo-500">Codex</a>
+      <a href="contact/" class="text-white hover:text-indigo-500">Contact</a>
+    </nav>
+
+    <!-- Title -->
+    <section class="text-center py-10">
+      <h1 class="text-4xl md:text-6xl font-bold">Tim Daso</h1>
+      <p class="text-lg text-gray-400 mt-4 max-w-xl mx-auto">
+        Game developer, puzzlemaker, composer, artist.
+      </p>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 md:px-20 pb-10">
+      <!-- Coding -->
+      <a
+        href="coding/"
+        class="bg-slate-900 hover:bg-indigo-900 transition p-6 rounded-2xl shadow-xl flex flex-col items-center text-center"
+      >
+        <img
+          src="src/assets/images/foo_1.png"
+          alt="Game Screenshot"
+          class="rounded mb-4 max-h-48 object-cover w-full"
+        />
+        <h2 class="text-xl font-semibold">Games</h2>
+      </a>
+
+      <!-- Crosswords -->
+      <a
+        href="crosswords/"
+        class="bg-slate-900 hover:bg-indigo-900 transition p-6 rounded-2xl shadow-xl flex flex-col items-center text-center"
+      >
+        <img
+          src="src/assets/images/cross_1.png"
+          alt="Crossword Preview"
+          class="rounded mb-4 max-h-48 object-cover w-full"
+        />
+        <h2 class="text-xl font-semibold">Crosswords</h2>
+      </a>
+
+      <!-- Compositions -->
+      <a
+        href="compositions/"
+        class="bg-slate-900 hover:bg-indigo-900 transition p-6 rounded-2xl shadow-xl flex flex-col items-center text-center"
+      >
+        <img
+          src="src/assets/images/music_1.png"
+          alt="Music Preview"
+          class="rounded mb-4 max-h-48 object-cover w-full"
+        />
+        <h2 class="text-xl font-semibold">Music</h2>
+      </a>
+
+      <!-- Codex -->
+      <a
+        href="codex/"
+        class="bg-slate-900 hover:bg-indigo-900 transition p-6 rounded-2xl shadow-xl flex flex-col items-center text-center"
+      >
+        <img
+          src="src/assets/images/balance.png"
+          alt="Codex"
+          class="rounded mb-4 max-h-48 object-cover w-full"
+        />
+        <h2 class="text-xl font-semibold">Codex</h2>
+        <!-- <p class="text-gray-400 text-sm mt-2">Discover more.</p> -->
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 py-4">
+      © 2025 Tim Daso ·
+      <a href="mailto:dasotimothy@gmail.com" class="underline"
+        >dasotimothy@gmail.com</a
+      >
+    </footer>
+  </body>
+</html>
+
+<!-- npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch; -->
+<!-- git add .     git commit -m "message"       git push origin main-->

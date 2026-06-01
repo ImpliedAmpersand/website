@@ -1,111 +1,320 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tim Daso</title>
+
+    <title>Tim Daso | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .no-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              outfit: ["Outfit", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body class="bg-black text-white font-sans">
-    <!-- Navbar -->
-    <nav
-      class="bg-black border-b border-gray-800 px-6 py-4 flex justify-center space-x-8 text-lg font-medium"
-    >
-      <a href="/" class="text-white hover:text-gray-300">Home</a>
-      <a href="coding/" class="text-white hover:text-gray-300">Coding</a>
-      <a href="compositions/" class="text-white hover:text-gray-300"
-        >Compositions</a
-      >
-      <a href="crosswords/" class="text-white hover:text-gray-300"
-        >Crosswords</a
-      >
-      <a href="codex/" class="text-white hover:text-gray-300">Codex</a>
-      <a href="contact/" class="text-white hover:text-gray-300">Contact</a>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="text-center py-10">
-      <h1 class="text-4xl md:text-6xl font-bold">Tim Daso</h1>
-      <p class="text-lg text-gray-400 mt-4 max-w-xl mx-auto">
-        Game developer, puzzlemaker, and composer.
-      </p>
-    </section>
-
-    <!-- Portfolio Grid -->
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 md:px-20 pb-20">
-      <!-- Coding -->
-      <a
-        href="coding/"
-        class="bg-slate-900 hover:bg-indigo-900 transition p-6 rounded-2xl shadow-xl flex flex-col items-center text-center"
-      >
+  <body class="bg-black text-slate-100 font-outfit flex flex-col min-h-screen">
+    <header class="p-6">
+      <nav></nav>
+    </header>
+    <main class="flex flex-1 flex-col">
+      <section class="flex flex-1 flex-col items-center justify-center">
         <img
-          src="src/assets/images/foo_1.png"
-          alt="Game Screenshot"
-          class="rounded mb-4 max-h-48 object-cover w-full"
+          src="src/assets/ampersand_logo_white.svg"
+          alt="Tim Daso Logo"
+          class="w-20 h-20 m-4"
         />
-        <h2 class="text-xl font-semibold">Games & Coding</h2>
-        <p class="text-gray-400 text-sm mt-2">
-          Original games, interactive tools, and experimental code projects.
+        <a
+          href="/me/"
+          class="text-7xl font-extralight tracking-tight hover:text-indigo-400 hover:scale-[1.03] transition-all duration-100 ease-in-out"
+        >
+          <!-- hover:underline decoration-2 underline-offset-4-->Tim Daso</a
+        >
+        <!--
+        <p class="text-2xl text-slate-200 font-extralight">
+          Game Designer and Puzzlemaker
         </p>
-      </a>
+    -->
+      </section>
 
-      <!-- Crosswords -->
-      <a
-        href="crosswords/"
-        class="bg-slate-900 hover:bg-indigo-900 transition p-6 rounded-2xl shadow-xl flex flex-col items-center text-center"
-      >
+      <section class="flex flex-1 flex-row items-center justify-center">
+        <a
+          href="/games/"
+          class="text-6xl text-slate-100 font-thin hover:text-indigo-400 hover:scale-105 transition-all duration-100 ease-in-out"
+        >
+          <!-- hover:underline decoration-[1.5px] underline-offset-4"-->
+          Games
+        </a>
         <img
-          src="src/assets/images/cross_1.png"
-          alt="Crossword Preview"
-          class="rounded mb-4 max-h-48 object-cover w-full"
+          src="src/assets/ampersand_logo_white.svg"
+          alt="Tim Daso Logo"
+          class="w-8 h-8 m-4 pt-2"
         />
-        <h2 class="text-xl font-semibold">Crosswords</h2>
-        <p class="text-gray-400 text-sm mt-2">
-          Play puzzles I've made or download .puz files and solve offline.
-        </p>
-      </a>
-
-      <!-- Compositions -->
-      <a
-        href="compositions/"
-        class="bg-slate-900 hover:bg-indigo-900 transition p-6 rounded-2xl shadow-xl flex flex-col items-center text-center"
-      >
+        <a
+          href="/puzzles/"
+          class="text-6xl text-slate-100 font-thin hover:text-indigo-400 hover:scale-105 transition-all duration-100 ease-in-out"
+        >
+          Puzzles
+        </a>
         <img
-          src="src/assets/images/music_1.png"
-          alt="Music Preview"
-          class="rounded mb-4 max-h-48 object-cover w-full"
+          src="src/assets/ampersand_logo_white.svg"
+          alt="Tim Daso Logo"
+          class="w-8 h-8 m-4 pt-2"
         />
-        <h2 class="text-xl font-semibold">Compositions</h2>
-        <p class="text-gray-400 text-sm mt-2">
-          Listen to my music or explore scores and sheet music.
-        </p>
-      </a>
 
-      <!-- Codex -->
-      <a
-        href="codex/"
-        class="bg-slate-900 hover:bg-indigo-900 transition p-6 rounded-2xl shadow-xl flex flex-col items-center text-center"
-      >
+        <!-- <a
+          href="/music/"
+          class="text-6xl text-slate-100 font-thin hover:text-indigo-400 hover:scale-105 transition-all duration-100 ease-in-out"
+        >
+          Music
+        </a>
         <img
-          src="src/assets/images/balance.png"
-          alt="Codex"
-          class="rounded mb-4 max-h-48 object-cover w-full"
-        />
-        <h2 class="text-xl font-semibold">Codex</h2>
-        <p class="text-gray-400 text-sm mt-2">
-          Game design lore, dev notes, and behind-the-scenes documents.
-        </p>
-      </a>
-    </section>
+          src="src/assets/ampersand_logo_white.svg"
+          alt="Tim Daso Logo"
+          class="w-8 h-8 m-4 pt-2"
+        /> -->
+        <a
+          href="/artwork/"
+          class="text-6xl text-slate-100 font-thin hover:text-indigo-400 hover:scale-105 transition-all duration-100 ease-in-out"
+        >
+          Artwork
+        </a>
+      </section>
 
-    <!-- Footer -->
-    <footer class="text-center text-gray-500 py-8">
-      © 2025 Tim Daso ·
-      <a href="mailto:dasotimothy@gmail.com" class="underline"
-        >dasotimothy@gmail.com</a
+      <section
+        class="flex flex-row items-center justify-start w-full overflow-x-auto no-scrollbar"
       >
+        <a
+          href="/games/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/babel_1.png"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+        <a
+          href="/artwork/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/sunrise point.webp"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+        <a
+          href="/games/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/title_trms_gif.gif"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+        <a
+          href="/puzzles/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/ctc thumbnail.jpg"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+        <a
+          href="/artwork/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/talonflame_painting.webp"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+        <a
+          href="/games/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/dragon_1.jpg"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+        <a
+          href="/artwork/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/mudkip_and_wooper.webp"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+        <a
+          href="/games/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/title.png"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+        <a
+          href="/puzzles/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/cross_2.png"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+      </section>
+
+      <section
+        class="flex flex-row items-center justify-start w-full overflow-x-auto no-scrollbar"
+      >
+        <a
+          href="/artwork/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/leopard.webp"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+        <a
+          href="/games/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/foo_1.png"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+        <a
+          href="/games/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/solitaire.png"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+        <a
+          href="/puzzles/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/cross_3.png"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+        <a
+          href="/artwork/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/clubs_queen_pheasant.webp"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+        <a
+          href="/puzzles/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/turning_cog.png"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+        <a
+          href="/artwork/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/betty.webp"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+        <a
+          href="/puzzles/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/six seven.png"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+        <a
+          href="/artwork/"
+          class="h-48 flex-shrink-0 m-4 hover:scale-105 rounded-lg transition-all duration-200 ease-in-out"
+        >
+          <img
+            src="src/assets/alakazam.jpg"
+            alt="Blending of Media"
+            class="h-full rounded-lg"
+          />
+        </a>
+      </section>
+    </main>
+    <footer class="">
+      <section class="flex flex-1 flex-row items-center justify-center">
+        <a
+          href="mailto:hello@timdaso.com"
+          class="flex flex-1 font-extralight justify-end hover:underline underline-offset-2"
+          >hello@timdaso.com</a
+        >
+        <img
+          src="../src/assets/ampersand_logo_white.svg"
+          alt="Tim Daso Logo"
+          class="w-3 h-3 m-6 flex"
+        />
+        <p class="flex flex-1 font-extralight">© 2026 Tim Daso</p>
+      </section>
     </footer>
   </body>
 </html>
 
 <!-- npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch; -->
+<!-- git add .     git commit -m "message"       git push origin main-->
